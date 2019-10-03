@@ -1,0 +1,99 @@
+/*
+ * 
+ * @author scout.starchaser@gmail.com
+*/
+
+body {
+    padding: 50px;
+    font-family: "Arial Black";
+    background-color: #fefefe;
+}
+
+.floral {
+    background-color: #e2d4ee;
+}
+
+.button {
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10%;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-dark {
+    background-color: #263238;
+    border-bottom: 5px solid #000a12;
+    text-shadow: -2px -1px #000a12;
+}
+
+.button-green {
+    background-color: #69f0ae;
+    border-bottom: 5px solid #2bbd7e;
+    text-shadow: -2px -1px #2bbd7e;
+}
+
+.button-cyan {
+    background-color: #84ffff;
+    border-bottom: 5px solid #4bcbcc;
+    text-shadow: -2px -1px #4bcbcc;
+}
+
+.button-red {
+    background-color: #ff5252;
+    border-bottom: 5px solid #c50e29;
+    text-shadow: -2px -1px #c50e29;
+}
+
+.button-inverse {
+    color: #263238;
+    background-color: transparent;
+    border: 1px solid  #000a12;
+    border-bottom: 5px solid #000a12;
+    text-shadow: -2px -1px #fff;
+}
+
+.button-floral-2,
+.button-ok {
+    background-color: #70739e;
+    border-bottom: 5px solid #4e506e;
+    text-shadow: -2px -1px #4e506e;
+}
+
+.button-floral-3,
+.button-help
+ {
+    background-color: #c04691;
+    border-bottom: 5px solid #863165;
+    text-shadow: -2px -1px #863165;
+}
+
+.button-floral-4,
+.button-submit {
+    background-color: #7ca49b;
+    border-bottom: 5px solid #4e6761;
+    text-shadow: -2px -1px #4e6761;
+}
+
+.button-floral-5,
+.button-cancel {
+    background-color: #787179;
+    border-bottom: 5px solid #544f54;
+    text-shadow: -2px -1px #544f54;
+}
+
+.text-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.text-input:focus {
+    border: 3px solid #84ffff;
+}
