@@ -4,11 +4,12 @@
 */
 
 const themeSwitchHandler = event => {
-    document
-        .querySelectorAll('#theme-div button')
-        .forEach(x => x.className = 'button-inverse-neutral');
-    
     if (event && event.target.tagName === 'BUTTON') {
+
+        document
+            .querySelectorAll('#theme-div button')
+            .forEach(x => x.className = 'button-inverse-neutral');
+    
         document.body.className = event.target.id;
         event.target.className = 'button-c';
     }
