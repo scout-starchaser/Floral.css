@@ -1,0 +1,264 @@
+/*
+ * Floral.less
+ * @author scout.starchaser@gmail.com
+*/
+
+
+/*
+ * TODO:
+ * -modals
+ * -responsive grid
+ * -tile gallery
+ * -tables
+ * 
+*/
+
+
+/* Imports
+==============================*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Constants
+==============================*/
+@nearblack: #4D565E;
+@classydark: #2d283e;
+
+/* Themes
+==============================*/
+.theme-flowers {
+    @bg: #EDE7F3;
+    @bright_a: #7ca49b;
+    @bright_b: #c04691;
+    @dark_a: #70739e;
+    @dark_b: #787179;
+
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+.theme-mono {
+    @bg: #f8f8f8;
+    @bright_a: @nearblack;
+    @bright_b: @nearblack;
+    @dark_a: @nearblack;
+    @dark_b: @nearblack;
+
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+.theme-light {
+    @bg: #f8f8f8;
+    @bright_a: #59cd91;
+    @bright_b: #de2183;
+    @dark_a: #04b5d8;
+    @dark_b: #787179;
+
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+.theme-subdued {
+    @bg: #e7eef3;
+    @bright_a: #336b87;
+    @bright_b: #763626;
+    @dark_a: #336b87;
+    @dark_b: #2a3132;
+
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+.theme-blues {
+    @bg: #F0F7FB    ;
+    @bright_a: #5680e9;
+    @bright_b: #c04691;
+    @dark_a: darken(#c1c8e4, 20%);
+    @dark_b: #8860d0;
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+.theme-classy {
+    @bg: #2d283e    ;
+    @bright_a: #5062aa;
+    @bright_b: #c04691;
+    @dark_a: #564f6f;
+    @dark_b: #86b3d1;
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b, #fff);
+}
+
+.theme-soothing {
+    @bg: #F1F7F5;
+    @bright_a: #41b3a3;
+    @bright_b: #c38d9e;
+    @dark_a: #21bfde;
+    @dark_b: #e27d60;
+    .theme(@bg, @bright_a, @bright_b, @dark_a, @dark_b);
+}
+
+/* Theme Machine
+==============================*/
+.theme(@bg; @bright_a; @bright_b; @dark_a; @dark_b;
+    @text-color: @nearblack) {
+    
+    /* Basics */
+    background-color: @bg;
+    color: @text-color;
+
+    /* Buttons */ 
+    .button-submit,
+    .button-a {
+        .newButton(@bright_a);
+    }
+
+    .button-cancel,
+    .button-b {
+        .newButton(@bright_b);
+    }
+
+    .button-ok,
+    .button-c {
+        .newButton(@dark_a);
+    }
+
+    .button-help,
+    .button-d {
+        .newButton(@dark_b);
+    }
+
+    .button-inverse-a {
+        .newInverseButton(@bright_a);
+    }
+
+    .button-inverse-b {
+        .newInverseButton(@bright_b);
+    }
+
+    .button-inverse-c {
+        .newInverseButton(@dark_b);
+    }
+
+    .button-inverse-d {
+        .newInverseButton(@dark_a);
+    }
+
+    .button-inverse-neutral {
+        .newInverseButton((@text-color));
+    }
+
+    .button-inverse-white {
+        .newInverseButton(#fff);
+    }
+
+    .button-inverse-black {
+        .newInverseButton(#000);
+    }
+
+    .button-clear-neutral {
+        .newClearButton((@text-color));
+    }
+
+    /* Inputs */
+    input:focus {
+        border: 2px solid darken(@bg, 30%);
+    }
+
+    /* Misc */
+    .header {
+        // background-color: darken(@bg, 8%);
+        height: fit-content;
+        width: 100%;
+        // text-align: center;
+        padding-bottom: 5%;
+        border-bottom: 5px @text-color;
+    }
+
+    .sticky-header {
+        .header();
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    .fragment {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .textarea {
+        background-color: #fff;
+        width: 100%;
+    }
+    
+    .ul-horizontal {
+        list-style: none;
+        li {
+             display: inline-block;
+        }
+    }
+    
+    .hello-floral {
+        text-align: center;
+    }
+    
+    .responsive-grid {
+        display: grid;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+}
+
+
+/* Button Machine
+==============================*/
+.button,
+button {
+    padding: 5px 10px;
+    margin: 0% 2% 2% 0%;
+    border-radius: 10%;
+    border: none;
+    color: @nearblack;
+    font-weight: bold;
+}
+
+.newButton(@bg) {
+    .button();
+    color: #fff;
+    @dark: darken(@bg, 15);
+    background-color: @bg;
+    border: 2px solid transparent;
+    border-bottom: 5px solid @dark;
+    text-shadow: -1px -1px @dark;
+}
+
+.newInverseButton(@color) {
+    .button();
+    background-color: transparent;
+    border: 2px solid @color;
+    color: @color;
+    font-weight: bold;
+}
+
+.newClearButton(@color) {
+    .newInverseButton(@color);
+    border: none;
+}
+
+/* General
+==============================*/
+body {
+    padding: 10%;
+    font-family: 'Roberto', sans-serif;
+}
+
+input[type="text"],
+select,
+.textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
