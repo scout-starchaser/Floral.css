@@ -32,6 +32,10 @@
   /* Inputs */
   /* Misc */
 }
+.theme-flowers body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
+}
 .theme-flowers .button-submit,
 .theme-flowers .button-a {
   padding: 5px 10px;
@@ -257,7 +261,6 @@
 .theme-flowers .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-flowers .ul-horizontal {
   list-style: none;
@@ -272,6 +275,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-mono body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-mono .button-submit,
 .theme-mono .button-a {
@@ -494,7 +501,6 @@
 .theme-mono .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-mono .ul-horizontal {
   list-style: none;
@@ -509,6 +515,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-light body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-light .button-submit,
 .theme-light .button-a {
@@ -735,7 +745,6 @@
 .theme-light .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-light .ul-horizontal {
   list-style: none;
@@ -750,6 +759,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-subdued body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-subdued .button-submit,
 .theme-subdued .button-a {
@@ -976,7 +989,6 @@
 .theme-subdued .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-subdued .ul-horizontal {
   list-style: none;
@@ -991,6 +1003,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-blues body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-blues .button-submit,
 .theme-blues .button-a {
@@ -1217,7 +1233,6 @@
 .theme-blues .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-blues .ul-horizontal {
   list-style: none;
@@ -1232,6 +1247,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-classy body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-classy .button-submit,
 .theme-classy .button-a {
@@ -1460,7 +1479,6 @@
 .theme-classy .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-classy .ul-horizontal {
   list-style: none;
@@ -1475,6 +1493,10 @@
   /* Buttons */
   /* Inputs */
   /* Misc */
+}
+.theme-soothing body {
+  padding: 10%;
+  font-family: 'Roberto', sans-serif;
 }
 .theme-soothing .button-submit,
 .theme-soothing .button-a {
@@ -1701,7 +1723,6 @@
 .theme-soothing .textarea {
   background-color: #fff;
   width: 100%;
-  color: #4D565E;
 }
 .theme-soothing .ul-horizontal {
   list-style: none;
@@ -1724,21 +1745,11 @@ button {
 }
 /* 
 ==============================*/
-body {
-  padding: 10%;
-  font-family: 'Roberto', sans-serif;
-}
 .responsive-grid {
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: repeat(3, 100px);
-  grid-template-areas: 'header header header' 'sideleft content sideright' 'footer footer footer';
-}
-.responsive-grid > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: 'header header header' 'content content content' 'content content content' 'footer footer footer';
 }
 .header {
   grid-area: header;
@@ -1749,23 +1760,6 @@ body {
 .footer {
   grid-area: footer;
 }
-.sideleft {
-  grid-area: sideleft;
-}
-.sideright {
-  grid-area: sideright;
-}
 .content {
   background-color: darkslateblue;
-}
-.header,
-.footer {
-  grid-column: 0.25;
-}
-.header,
-.main,
-.footer,
-.sideleft,
-.sideright {
-  padding: 1em;
 }
