@@ -199,15 +199,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #70739e;
 }
 .theme-flowers .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #7ca49b;
-  border-bottom: 2px solid #7ca49b;
+  border-left: 3px solid #7ca49b;
+  border-bottom: 3px solid #7ca49b;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -428,15 +430,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #4D565E;
 }
 .theme-mono .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #4D565E;
-  border-bottom: 2px solid #4D565E;
+  border-left: 3px solid #4D565E;
+  border-bottom: 3px solid #4D565E;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -661,15 +665,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #04b5d8;
 }
 .theme-light .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #59cd91;
-  border-bottom: 2px solid #59cd91;
+  border-left: 3px solid #59cd91;
+  border-bottom: 3px solid #59cd91;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -894,15 +900,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #336b87;
 }
 .theme-subdued .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #336b87;
-  border-bottom: 2px solid #336b87;
+  border-left: 3px solid #336b87;
+  border-bottom: 3px solid #336b87;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -1127,15 +1135,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #7a89c5;
 }
 .theme-blues .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #5680e9;
-  border-bottom: 2px solid #5680e9;
+  border-left: 3px solid #5680e9;
+  border-bottom: 3px solid #5680e9;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -1362,15 +1372,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #564f6f;
 }
 .theme-classy .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #5062aa;
-  border-bottom: 2px solid #5062aa;
+  border-left: 3px solid #5062aa;
+  border-bottom: 3px solid #5062aa;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
@@ -1595,15 +1607,17 @@
   display: inline-block;
   height: 16px;
   width: 16px;
+  border-radius: 15%;
   background-color: #fff;
   left: 0px;
   top: 3px;
+  border: 1px solid #21bfde;
 }
 .theme-soothing .checkbox label::after {
   height: 5px;
   width: 9px;
-  border-left: 2px solid #41b3a3;
-  border-bottom: 2px solid #41b3a3;
+  border-left: 3px solid #41b3a3;
+  border-bottom: 3px solid #41b3a3;
   left: 4px;
   top: 7px;
   transform: rotate(-45deg);
